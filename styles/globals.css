@@ -1,26 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700;800&display=swap');
+
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 * {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.flat-flex{
+  @apply flex justify-between items-center
 }
+
+.loader{
+  @apply border-gray-200 rounded-full border-4 ease-linear h-10 w-10;
+  border-top-color: #fb923c;
+  animation: spinner 1.2s linear infinite;
+}
+
+@keyframes spinner {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+
+.header-links{
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+.images{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.social li{
+  list-style: none;
+  margin: 30px 20px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.social li:hover{
+  color: #fb923c;
+}
+
+.sideCategory li{
+  color: white;
+  margin: 50px 0;
+  font-size: 20px;
+  cursor: pointer;
+  border-bottom: 1px dotted #fb923c;
+  padding-bottom: 30px;
+}
+
+.sideCategory li:hover{
+  color: #fb923c;
+}
+
