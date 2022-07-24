@@ -8,14 +8,15 @@ import 'swiper/css';
 import getPost from "../../lib/helper";
 import fetcher from "../../lib/fetcher";
 import { Spinner } from "../../components";
+import Error from "../../components";
 
-const post = ({ img, title, category, description}) => {
+export default function post({ img, title, category, description}) {
     SwiperCore.use([Autoplay, Pagination, Navigation])
 
     const { data, isLoading, isError } = fetcher(`api/posts`)
 
     if(isLoading) return <Spinner></Spinner>
-    if(isError) return <ErrorComponent></ErrorComponent>
+    if(isError) return <Error/>
 
   return (
        <main className="container">
@@ -121,4 +122,3 @@ export async function getStaticPaths(){
     }
 }
 
-export default post

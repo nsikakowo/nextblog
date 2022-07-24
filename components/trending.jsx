@@ -60,7 +60,7 @@ const Trend = ({data})=>{
     return(
         <div className="mr-5 w-[25%} sm:w-full mb-[10px] " >
             <div className="w-full h-[200px] sm:h-[290px] relative mb-5">
-                <Image  src={img}  layout="fill" className="rounded-[8px]"/>
+                <Image alt="image" src={img}  layout="fill" className="rounded-[8px]"/>
             </div>
             <h2 className="font-[600] text-[#15133C]  text-1xl">{title || "Untitled"}</h2>
             <div className="mt-1 mb-5">

@@ -47,7 +47,7 @@ function Slide({data}){
     return (
         <div className="h-[650px] flex flex-col justify-center pt-9  relative">
         <div>
-            <Image src={img} layout='fill' className="images z-[1]"/>
+            <Image alt="image" src={img} layout='fill' className="images z-[1]"/>
             <div className="bg-orange-100 z-[2] absolute top-0 w-full h-full opacity-[.4]" />
         </div>
         <div className="px-9 z-[3]">

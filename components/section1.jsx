@@ -33,7 +33,7 @@ const Single=({data})=>{
     return(
         <div className="mr-5 sm:mb-9 w-full sm:mx-auto">
             <div className="w-full h-[300px] relative mb-5">
-                <Image  src={img}  layout="fill" className="rounded-[8px]"/>
+                <Image alt="image" src={img}  layout="fill" className="rounded-[8px]"/>
             </div>
             <h2 className="font-[600] text-[#15133C]  text-2xl">{title}</h2>
             <div className="my-3">

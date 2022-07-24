@@ -48,7 +48,7 @@ const Featured = ({data})=>{
         </div>
         
             <div className="w-[60%] sm:w-full h-[500px] sm:h-[350px] relative mb-5">
-                    <Image  src={img}  layout="fill" className="rounded-[8px]"/>
+                    <Image alt="image"  src={img}  layout="fill" className="rounded-[8px]"/>
             </div>
        
     </div>

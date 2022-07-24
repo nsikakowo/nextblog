@@ -8,6 +8,7 @@ export default function author() {
             width={50} 
             height={50} 
             className="rounded-full"
+            alt="image"
             />
         </div>
         <div className="ml-2">
