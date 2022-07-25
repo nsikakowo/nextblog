@@ -32,7 +32,7 @@ export default function post({ img, title, category, description}) {
                         </div>
                  </section>
                  <div className="w-full h-[900px] sm:h-[500px] relative mb-5">
-                <Image src={img}  layout="fill" className=""/>
+                <Image src={img} alt="image" layout="fill" className=""/>
             </div>
                  <section className="w-full sm:flex-col flex justify-start my-[60px] text-zinc-500 sm:mx-auto px-9 sm:px-1">
                     <div className="w-[75%] sm:text-center sm:mx-auto sm:w-[90%] px-9 sm:px-1">
@@ -86,7 +86,7 @@ const Related = ()=>{
     return(
         <div className="mr-5 w-[25%} sm:w-full mb-[10px]">
             <div className="w-full h-[200px] sm:h-[290px] relative mb-5">
-                <Image  src="/images/p2.png"  layout="fill" className="rounded-[8px]"/>
+                <Image alt="image" src="/images/p2.png"  layout="fill" className="rounded-[8px]"/>
             </div>
             <Link href="/"><a className=" text-[#15133c] hover:text-orange-400"><h2 className="font-[600] text-[#15133C] text-[#15133c] hover:text-orange-400  text-1xl">Time to understand what its takes to move the tide</h2></a></Link>
             {/* <div className="mt-1 mb-5">

@@ -31,7 +31,7 @@ const slider = () => {
     >
         {
             data.map((value, index)=>(
-                <SwiperSlide>
+                <SwiperSlide key={index}>
                     <Slide key={index} data={value} ></Slide>
                 </SwiperSlide>
             ))

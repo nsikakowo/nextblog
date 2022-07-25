@@ -41,7 +41,7 @@ const trending = () => {
                     {
                         data.map((value, index) => (
 
-                            <SwiperSlide>
+                            <SwiperSlide key={index}>
                                 <Trend data={value} key={index}></Trend>
                             </SwiperSlide> 
                         ))
